@@ -14,10 +14,8 @@ The system was implemented using an ESP8266 microcontroller along with Max30100 
 DHT11 sensors to monitor temperature, humidity, heart rate, and pulse oximetry readings. 
 
 Data was collected and transmitted to a mobile application developed using Blynk, providing 
-real-time monitoring for medical staff and caregivers. 
-
-An alert system was integrated to notify ambulance drivers and staff of any deviations from 
-safe parameters, prompting immediate action if necessary.
+real-time monitoring for medical staff and caregivers. An alert system was integrated to notify 
+ambulance drivers and staff of any deviations from safe parameters, prompting immediate action if necessary.
 <br><br>
 
 <p align="center">
