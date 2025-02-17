@@ -1,7 +1,6 @@
 <div align="center">
  <h1><strong>Traveling Infant Incubator </strong></h1>
 </div>
-
 <br><br>
 
 This project aimed to address the critical need for accessible and reliable infant incubator 
