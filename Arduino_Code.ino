@@ -67,4 +67,31 @@ void setup() {
   // Register a callback routine
 }
 
+void loop() {
+  pox.update();
+  Blynk.run();
+  //timer.run();
 
+  if (millis() - tsLastReport > REPORTING_PERIOD_MS) {
+    int chk = DHT11.read(DHTPIN);
+    Serial.print("Humidity (%): ");
+    Serial.println((float)DHT11.humidity, 2);
+    Serial.print("Temperature  (C): ");
+    Serial.println((float)DHT11.temperature, 2);
+    Blynk.virtualWrite(V1, DHT11.humidity);  // select your virtual pins accordingly
+    Blynk.virtualWrite(V0, DHT11.temperature);
+    tsLastReport = millis();
+  }
+  if (millis() - tsLastReport2 > REPORTING_PERIOD_MS_2) {
+    BPM = pox.getHeartRate();
+    SpO2 = pox.getSpO2();
+    Serial.print("Heart rate:");
+    Serial.print(BPM);
+    Serial.print(" bpm / SpO2:");
+    Serial.print(SpO2);
+    Serial.println(" %");
+    Blynk.virtualWrite(V2, BPM);
+    Blynk.virtualWrite(V3, SpO2);
+    tsLastReport2 = millis();
+  }
+}
