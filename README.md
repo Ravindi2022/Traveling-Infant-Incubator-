@@ -1,4 +1,8 @@
-# Traveling-Infant-Incubator-
+<div align="center">
+ <h1><strong>Traveling Infant Incubator </strong></h1>
+</div>
+
+<br><br>
 
 This project aimed to address the critical need for accessible and reliable infant incubator 
 transportation in regions with limited medical facilities, focusing specifically on the context 
@@ -15,9 +19,10 @@ real-time monitoring for medical staff and caregivers.
 An alert system was integrated to notify ambulance drivers and staff of any deviations from 
 safe parameters, prompting immediate action if necessary
 
+<br><br>
+<br><br>
 
+<p align="center">
+  <img src="Images/Picture1.jpg" alt="Picture1" />
+</p>
 
-
-<div align="center">
-   ![Picture1](https://github.com/user-attachments/assets/ff2fd49f-8865-44df-8e05-99663f7e8bed)
-</div>
