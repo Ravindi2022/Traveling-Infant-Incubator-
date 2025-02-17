@@ -39,3 +39,32 @@ void onBeatDetected() {
   Serial.println("Beat Detected!");
 }
 
+void setup() {
+  // Debug console
+  // Serial.begin(9600);
+  Serial.begin(115200);
+  delay(1000);
+
+  //dht.begin();
+
+  //timer.setInterval(1000L, sendSensor);
+
+  Blynk.begin(BLYNK_AUTH_TOKEN, ssid, pass);
+
+  Serial.print("Initializing Pulse Oximeter..");
+
+  if (!pox.begin()) {
+    Serial.println("FAILED");
+    for (;;)
+      ;
+  } else {
+    Serial.println("SUCCESS");
+    pox.setOnBeatDetectedCallback(onBeatDetected);
+  }
+  // Configure sensor to use 7.6mA for LED drive
+  pox.setIRLedCurrent(MAX30100_LED_CURR_7_6MA);
+
+  // Register a callback routine
+}
+
+
