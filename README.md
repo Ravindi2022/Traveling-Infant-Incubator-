@@ -19,7 +19,6 @@ An alert system was integrated to notify ambulance drivers and staff of any devi
 safe parameters, prompting immediate action if necessary
 
 <br><br>
-<br><br>
 
 <p align="center">
   <img src="Images/Picture1.jpg" alt="Picture1" />
