@@ -14,3 +14,6 @@ Data was collected and transmitted to a mobile application developed using Blynk
 real-time monitoring for medical staff and caregivers. 
 An alert system was integrated to notify ambulance drivers and staff of any deviations from 
 safe parameters, prompting immediate action if necessary
+
+![Picture1](https://github.com/user-attachments/assets/ff2fd49f-8865-44df-8e05-99663f7e8bed)
+
